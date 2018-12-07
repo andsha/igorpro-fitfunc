@@ -1,1 +1,1 @@
-# igorpro-fitfunc
+# igorpro-fitpro
