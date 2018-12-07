@@ -5,11 +5,15 @@ Menu "XPS"
 	"Update...", UpdateXPSFit()
 end
 
-variable /g hhh = 10
 
 function UpdateXPSFit()
-	NewPanel /W = (500,100,600,150) /N = XPS_Fit_Update
-	Button Download pos = {1,1}, size = {98,48}, title="Step1: Unload", proc = UnloadXPSFit
+  string urlbase = "http://raw.githubusercontent.com/andsha/igorpro-fitpro/"
+  string str = urlbase + "master/version"
+  //string response = FetchURL(str)
+
+
+  //NewPanel /W = (500,100,600,150) /N = XPS_Fit_Update
+  //Button Download pos = {1,1}, size = {98,48}, title="Step1: Unload", proc = UnloadXPSFit
 end
 
 
